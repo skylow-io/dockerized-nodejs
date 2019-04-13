@@ -1,0 +1,30 @@
+{
+  "name": "dockerized-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
+    "prod": "tsc && node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylow-io/dockerized-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skylow-io/dockerized-nodejs/issues"
+  },
+  "homepage": "https://github.com/skylow-io/dockerized-nodejs#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/mongodb": "^3.1.23",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.4.3"
+  }
+}
